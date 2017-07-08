@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: MFEprimer
+Version: 2.0
+Summary: A fast thermodynamics-based program for checking PCR primer specificity
+Home-page: https://github.com/quwubin/MFEprimer
+Author: Wubin Qu
+Author-email: quwubin@gmail.com
+License: MIT license
+Description: A fast thermodynamics-based program for checking PCR primer specificity
+         See README for more information.
+Platform: UNKNOWN

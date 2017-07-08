@@ -22,12 +22,15 @@ import sqlite3
 from pprint import pprint
 import shutil
 
-from chilli import Seq
-from chilli import SeqCheck
-from chilli import TmDeltaG
-from chilli import chilli
-from chilli import FastaFormatParser
-from chilli import DegenerateSeqConvetor
+from MFEprimer import chilli
+from MFEprimer.chilli import Seq
+from MFEprimer.chilli import SeqCheck
+from MFEprimer.chilli import TmDeltaG
+from MFEprimer.chilli import chilli
+from MFEprimer.chilli import FastaFormatParser
+from MFEprimer.chilli import DegenerateSeqConvetor
+
+
 
 def get_os():
     if platform.system() == 'Darwin':

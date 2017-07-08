@@ -1,6 +1,9 @@
-# MFEprimer-2.0 
+# MFEprimer-2.1
 
 A fast thermodynamics-based program for checking PCR primer specificity 
+
+> NOTE: this software has been edited in order to make it installable via setup.py
+
 
 ## Online server
 * http://www.mfeprimer.com/

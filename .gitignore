@@ -1,3 +1,5 @@
 *.pyc
 test/test.rna.*
 test/*.fa
+build/*
+dist/*
