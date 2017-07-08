@@ -16,8 +16,8 @@ Version = '1.0'
 import sys
 import os
 from optparse import OptionParser
-import chilli
-import FastaSimpleFormatParser
+from MFEprimer.chilli import chilli
+from MFEprimer.chilli import FastaSimpleFormatParser
 
 
 def get_opt():

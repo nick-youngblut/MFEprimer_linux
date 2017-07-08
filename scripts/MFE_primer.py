@@ -22,7 +22,7 @@ import sqlite3
 from pprint import pprint
 import shutil
 
-from MFEprimer import chilli
+from MFEprimer.chilli import chilli
 from MFEprimer.chilli import Seq
 from MFEprimer.chilli import SeqCheck
 from MFEprimer.chilli import TmDeltaG
@@ -492,8 +492,9 @@ def get_mid_seq(mid_seq_id_list, options, session_dir, db):
     outfile = os.path.join(session_dir, tmp_name)
     twoBitDB = db + '.2bit'
 
-    cmd = '%s%stwoBitToFa -seqList=%s %s %s' % (bin_path, os.sep, mid_seq_id_list_file, twoBitDB, outfile)
-
+    #cmd = '%s%stwoBitToFa -seqList=%s %s %s' % (bin_path, os.sep, mid_seq_id_list_file, twoBitDB, outfile)
+    cmd = 'twoBitToFa -seqList=%s %s %s' % (mid_seq_id_list_file, twoBitDB, outfile)
+    
     try:
         out, err = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
     except:
@@ -705,7 +706,8 @@ def extract_by_twoBitToFa(id_pos_range_list, options, session_dir, db):
     outfile = os.path.join(session_dir, tmp_name)
     twoBitDB = db + '.2bit'
 
-    cmd = '%s%stwoBitToFa -seqList=%s %s %s' % (bin_path, os.sep, id_pos_range_list_file, twoBitDB, outfile)
+    #cmd = '%s%stwoBitToFa -seqList=%s %s %s' % (bin_path, os.sep, id_pos_range_list_file, twoBitDB, outfile)
+    cmd = 'twoBitToFa -seqList=%s %s %s' % (id_pos_range_list_file, twoBitDB, outfile)
 
     try:
         out, err = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()

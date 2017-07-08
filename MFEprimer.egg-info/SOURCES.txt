@@ -17,11 +17,13 @@ MFEprimer/chilli/Seq.py
 MFEprimer/chilli/SeqCheck.py
 MFEprimer/chilli/ThermodynamicsParameters.py
 MFEprimer/chilli/TmDeltaG.py
-MFEprimer/chilli/UniFastaFormat.py
 MFEprimer/chilli/__init__.py
 MFEprimer/chilli/chilli.py
 MFEprimer/chilli/conv_shelve_json.py
-MFEprimer/chilli/mfe_index_db.py
 MFEprimer/chilli/mve.py
 MFEprimer/chilli/ve.py
 scripts/MFE_primer.py
+scripts/UniFastaFormat.py
+scripts/faToTwoBit
+scripts/mfe_index_db.py
+scripts/twoBitToFa

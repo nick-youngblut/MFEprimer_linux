@@ -7,7 +7,8 @@ import datetime
 from time import time
 from optparse import OptionParser
 import sqlite3
-import FastaIterator
+
+from MFEprimer.chilli import FastaIterator
 
 D2n_dic = dict(A=0, T=3, C=2, G=1, a=0, t=3, c=2, g=1)
 n2D_dic = {0:'A', 3:'T', 2:'C', 1:'G', 0:'a', 3:'t', 2:'c', 1:'g'}

@@ -41,24 +41,27 @@ fi
 
 echo "Begin indexing ..."
 
-$MFEHOME/chilli/UniFastaFormat.py -i $fasta_file
+#$MFEHOME/chilli/UniFastaFormat.py -i $fasta_file
+UniFastaFormat.py -i $fasta_file
 
 echo "Step 1/3: UniFasta done."
 
-if [ `getconf LONG_BIT` == 64 ]
-then
-    $MFEHOME/bin/$platform/64/faToTwoBit $fasta_file.unifasta $fasta_file.2bit
-else
-    $MFEHOME/bin/$platform/32/faToTwoBit $fasta_file.unifasta $fasta_file.2bit
-fi
+faToTwoBit $fasta_file.unifasta $fasta_file.2bit
 
+#if [ `getconf LONG_BIT` == 64 ]
+#then
+#    $MFEHOME/bin/$platform/64/faToTwoBit $fasta_file.unifasta $fasta_file.2bit
+#else
+#    $MFEHOME/bin/$platform/32/faToTwoBit $fasta_file.unifasta $fasta_file.2bit
+#fi
 
 echo "Step 2/3: faToTwoBit done."
 
 
 echo "Step 3/3: Index begin ..."
 
-$MFEHOME/chilli/mfe_index_db.py -f $fasta_file.unifasta -k $k
+#$MFEHOME/chilli/mfe_index_db.py -f $fasta_file.unifasta -k $k
+mfe_index_db.py -f $fasta_file.unifasta -k $k
 
 echo "Step 3/3: Index done"
 

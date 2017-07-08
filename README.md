@@ -2,7 +2,7 @@
 
 A fast thermodynamics-based program for checking PCR primer specificity 
 
-> NOTE: this software has been edited in order to make it installable via setup.py
+> NOTE: this software has been edited in order to make it installable on Linux64 via setup.py
 
 
 ## Online server
