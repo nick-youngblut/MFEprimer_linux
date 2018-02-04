@@ -12,9 +12,9 @@ scripts = [
 ]
 
 ## install main application
-desc = 'A fast thermodynamics-based program for checking PCR primer specificity'
+desc = 'A fast thermodynamics-based program for checking PCR primer specificity (linux-specific)'
 setup(
-    name = 'MFEprimer',
+    name = 'MFEprimer_linux',
     version = '2.1',
     description = desc,
     long_description = desc + '\n See README for more information.',
@@ -26,7 +26,7 @@ setup(
     package_dir = {'MFEprimer':
                    'MFEprimer'},
     scripts = scripts,
-    url = 'https://github.com/quwubin/MFEprimer'
+    url = 'https://github.com/nick-youngblut/MFEprimer_linux'
 )
 
 
