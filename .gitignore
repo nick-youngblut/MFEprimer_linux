@@ -6,3 +6,4 @@ dist/
 tmp/
 bin/
 MFEprimer.egg-info/*
+MFEprimer_linux.egg-info*
