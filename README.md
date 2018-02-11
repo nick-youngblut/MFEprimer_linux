@@ -1,4 +1,4 @@
-# MFEprimer-2.1
+# MFEprimer-2.1 linux
 
 A fast thermodynamics-based program for checking PCR primer specificity 
 
