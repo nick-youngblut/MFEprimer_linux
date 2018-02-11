@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nick-youngblut/MFEprimer_linux.svg?branch=master)](https://travis-ci.org/nick-youngblut/MFEprimer_linux)
+
 # MFEprimer-2.1 linux
 
 A fast thermodynamics-based program for checking PCR primer specificity 

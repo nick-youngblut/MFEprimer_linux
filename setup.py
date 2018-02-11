@@ -25,6 +25,7 @@ setup(
     packages = find_packages(),
     package_dir = {'MFEprimer':
                    'MFEprimer'},
+    include_package_data = True,
     scripts = scripts,
     url = 'https://github.com/nick-youngblut/MFEprimer_linux'
 )

@@ -8,3 +8,4 @@ install:
 
 script:
   python setup.py test
+  MFE_primer.py -h
