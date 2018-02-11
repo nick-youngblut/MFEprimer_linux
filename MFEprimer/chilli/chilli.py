@@ -119,7 +119,10 @@ def cal_dimer(seq1, seq2, mv=50, dv=1.5, d=50, n=0.25, align_mode='ANY', thermo_
     cmd = 'ntthal -mv %s -dv %s -d %s -n %s -s1 %s -s2 %s -a %s -path %s' \
             % (mv, dv, d, n, seq1, seq2, align_mode, thermo_path)
 
-    out, align = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
+    out, align = subprocess.Popen(cmd, shell=True,
+                                  stdout=subprocess.PIPE,
+                                  stderr=subprocess.PIPE).communicate()
+
     try:
         fields = out.splitlines()[0].split()
         delta_g = float(fields[-4]) / 1000
