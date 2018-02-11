@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-install_reqs = ['psutil']
+install_reqs = [
+    'pytest',
+    'psutil'
+]
 
 scripts = [
     'scripts/MFE_primer.py',

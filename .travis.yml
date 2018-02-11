@@ -8,9 +8,8 @@ install:
 
 script:
   # pytests
-  - python setup.py test
+  - pytest
   # script docs
   - UniFastaFormat.py -h
-  - faToTwoBit
   - mfe_index_db.py -h
   - MFE_primer.py -h
