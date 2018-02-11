@@ -5,8 +5,6 @@ from __future__ import print_function
 import os
 import sys
 import unittest
-## 3rd party
-import pandas as pd
 ## package
 from MFEprimer.chilli import Seq
 
