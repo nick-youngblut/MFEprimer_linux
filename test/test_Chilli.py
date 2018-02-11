@@ -4,7 +4,7 @@ from __future__ import print_function
 ## batteries
 import os
 import sys
-import unittest
+import pytest
 ## package
 from MFEprimer.chilli import chilli
 
@@ -12,31 +12,31 @@ from MFEprimer.chilli import chilli
 test_dir = os.path.join(os.path.dirname(__file__))
 data_dir = os.path.join(test_dir, 'data')
 
-class Test_DNA2int(unittest.TestCase):
+class Test_DNA2int(object):
     def test_simple(self):
         x = 'ATGC'
         y = chilli.DNA2int(x)
         msg = 'Return value: {}'.format(y)
-        self.assertEqual(y, 54, msg=msg)
+        assert y == 54
         
-class Test_DNAint_2_strand(unittest.TestCase):
+class Test_DNAint_2_strand(object):
     def test_simple(self):
         x = 'ATGC'
         y = chilli.DNA2int_2_strand(x)
         msg = 'Return value: {}'.format(y)
-        self.assertEqual(y, (54,99), msg=msg)
+        assert y == (54,99)
 
-class Test_baseN(unittest.TestCase):
+class Test_baseN(object):
     def test_simple(self):
         x = 10
         y = chilli.baseN(x, 2)
         msg = 'Return value: {}'.format(y)
-        self.assertEqual(y, '1010', msg=msg)
+        assert y == '1010'
 
-# class Test_cal_dimer(unittest.TestCase):
+# class Test_cal_dimer(object):
 #     def test_simple(self):
 #         x = 'ATGCGCGATAGAATATACATA'
 #         y = 'TAGGCCGAGATAATATACATA'
 #         y = chilli.cal_dimer(x, y)
 #         msg = 'Return value: {}'.format(y)
-#         self.assertEqual(y, 1, msg=msg)
+#         assert(y, 1, msg=msg)

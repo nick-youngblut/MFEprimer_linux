@@ -6,6 +6,9 @@ bin/
 MFEprimer.egg-info/*
 MFEprimer_linux.egg-info*
 
+# pytest
+.pytest_*
+
 # MFEprimer database file
 *uni.bak
 *uni.dat

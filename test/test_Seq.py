@@ -4,7 +4,7 @@ from __future__ import print_function
 ## batteries
 import os
 import sys
-import unittest
+import pytest
 ## package
 from MFEprimer.chilli import Seq
 
@@ -12,32 +12,32 @@ from MFEprimer.chilli import Seq
 test_dir = os.path.join(os.path.dirname(__file__))
 data_dir = os.path.join(test_dir, 'data')
 
-class Test_complement(unittest.TestCase):
+class Test_complement(object):
     def test_simple(self):
         x = 'ATGC'
         y = Seq.complement(x)
-        self.assertEqual(y, 'TACG')
+        assert y == 'TACG'
     def test_gap(self):
         x = 'AT-GC'
         y = Seq.complement(x)
-        self.assertEqual(y, 'TA-CG')
+        assert y == 'TA-CG'
         
-class Test_reverse(unittest.TestCase):
+class Test_reverse(object):
     def test_simple(self):
         x = 'ATGC'
         y = Seq.reverse(x)
-        self.assertEqual(y, 'CGTA')
+        assert y == 'CGTA'
     def test_gap(self):
         x = 'AT-GC'
         y = Seq.reverse(x)
-        self.assertEqual(y, 'CG-TA')
+        assert y == 'CG-TA'
 
-class Test_rev_com(unittest.TestCase):
+class Test_rev_com(object):
     def test_simple(self):
         x = 'ATGC'
         y = Seq.rev_com(x)
-        self.assertEqual(y, 'GCAT')
+        assert y == 'GCAT'
     def test_gap(self):
         x = 'AT-GC'
         y = Seq.rev_com(x)
-        self.assertEqual(y, 'GC-AT')
+        assert y == 'GC-AT'
