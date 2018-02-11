@@ -14,6 +14,6 @@ script:
   - mfe_index_db.py -h
   - MFE_primer.py -h
   # example
-#  UniFastaFormat.py -i test/data/test.rna
-#  faToTwoBit test/data/test.rna.unifasta test/data/test.rna.2bit
-#  mfe_index_db.py -f test/data/test.rna.unifasta -k 9
+  - UniFastaFormat.py -i test/data/test.rna
+  - faToTwoBit test/data/test.rna.unifasta test/data/test.rna.2bit
+  - mfe_index_db.py -f test/data/test.rna.unifasta -k 9
